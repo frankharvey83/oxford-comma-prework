@@ -3,6 +3,11 @@ def oxford_comma(array)
     array.join(" and ")
   elsif array.length == 1
     array.first.to_s
+  elsif array.length > 2
+    last = ["and"]
+    last.push(array.pop())
+    array
+    last
 end
 end
 
