@@ -6,9 +6,9 @@ def oxford_comma(array)
   elsif array.length > 2
     last = ["and"]
     last.push(array.pop())
-    array
-    last
+    last.join(" ")
 end
 end
 
-# a.map { |i|  + i.to_s + }.join(",")
+
+
